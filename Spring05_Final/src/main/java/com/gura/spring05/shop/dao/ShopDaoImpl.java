@@ -17,31 +17,31 @@ public class ShopDaoImpl implements ShopDao{
 	@Override
 	public List<ShopDto> getList() {
 		// TODO Auto-generated method stub
-		return null;
+		return session.selectList("shop.getList");
 	}
 
 	@Override
 	public void minusCount(int num) {
 		// TODO Auto-generated method stub
-		
+		session.update("shop.minusCount", num);
 	}
 
 	@Override
 	public void minusMoney(ShopDto dto) {
 		// TODO Auto-generated method stub
-		
+		session.update("shop.minusMoney", dto);
 	}
 
 	@Override
 	public void plusPoint(ShopDto dto) {
 		// TODO Auto-generated method stub
-		
+		session.update("shop.plusPoint", dto);
 	}
 
 	@Override
 	public int getPrice(int num) {
 		// TODO Auto-generated method stub
-		return 0;
+		return session.selectOne("shop.getPrice", num);
 	}
 
 }
