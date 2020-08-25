@@ -10,7 +10,7 @@ public class NoDeliveryException extends DataAccessException{
 	 */
 	public NoDeliveryException(String msg) {
 		super(msg);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 }
