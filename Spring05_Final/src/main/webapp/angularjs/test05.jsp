@@ -32,6 +32,7 @@
 				ng-minlength="3"
 				ng-maxlength="10"
 				ng-pattern="/^[a-zA-z0-9가-힇]+$/"/>
+				ng-pattern="/^[가-힇]+$/"/>
 			<div class="invalid-feedback">한글로, 3~10글자 이내로 입력하세요</div>
 		</div>
 		<button class="btn btn-outline-primary" type="submit" 
