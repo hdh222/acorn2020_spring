@@ -12,6 +12,7 @@
 <script src="../resources/js/angular.min.js"></script>
 </head>
 <!-- body 에서 일어나는 일은 angular 로 관리를 하겠다라는 의미 -->
+<!-- 서버가 처리하는 부분과 클라이언트가 처리하는 부분 구별 할 줄 알아야한다. -->
 <body ng-app>
 <div class="container">
 	<h1 ng-init="a='btn-primary'">클래스 속성 조작하기</h1>
@@ -27,19 +28,3 @@
 </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
